@@ -1,0 +1,9 @@
+<h1>Morgan Freeman</h1>
+
+<p>Morgan Freeman appeared in <%= @movies.length %> films.</p>
+
+<ol>
+  <% @movies.each do |movie|%>
+  <li><%= movie.title %> (<%= movie.year %>)</li>
+  <% end %>
+</ol>

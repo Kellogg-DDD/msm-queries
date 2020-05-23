@@ -1,0 +1,7 @@
+<h1>Directors under 55</h1>
+
+<ul>
+  <% @directors.each do |director|%>
+  <li><%= director.name %> (<%= director.dob.strftime("%B %d, %Y") %>)</li>
+  <% end %>
+</ul>

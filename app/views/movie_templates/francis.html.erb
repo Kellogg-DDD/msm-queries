@@ -1,0 +1,12 @@
+<h1>Francis Ford Coppola</h1>
+
+<p>Francis Ford Coppola directed <%= @movies.length %> films.</p>
+
+<ol>
+  <% @movies.each do |movie|%>
+  <li><%= movie.title %> (<%= movie.year %>)</li>
+  <% end %>
+</ol>
+
+
+
